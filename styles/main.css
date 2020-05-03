@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+
+html body{
+    max-width: 1440px;
+    min-width: 376px;
+    height: 100vh;
+    margin: auto;
+}
+
+body .curved {
+    position: relative;
+    transform: translate(100%, 0);
+    background: hsl(207, 33%, 95%);
+    height: 60vh;
+    width: 50%;
+    min-width: 50%;
+    border-bottom-left-radius: 50% 30%;
+}
+
+#container{
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-rows: 1fr  6fr 1fr;
+
+    max-width: 1440px;
+    min-width: 376px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+#container #header{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 8% 20px 10%;
+}
+
+#container #div-logo{
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+}
+
+
+
+
+
+#container #header #nav-bar a{
+    text-decoration: none;
+    margin: 10px;
+    color: #000;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    padding: 20px;
+}
+
+#container #header #nav-bar #login{
+    color: hsl(231, 7%, 65%);
+    padding: 10px 10px 10px 40px ;
+
+}
+
+#container #header #nav-bar #pricing{
+    padding: 10px 0px;
+
+}
+
+#container #header #nav-bar #product{
+    padding: 10px 0px;
+
+}
+
+#container #header #nav-bar #features{
+    padding: 10px 0px;
+
+}
+#container #header #nav-bar a:hover{
+    text-decoration: underline;
+    margin: 10px;
+    color: #000;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    
+}
+
+#container #main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;        
+    max-width: 1440px;
+    min-width: 376px;
+
+}
+
+#container #main #img-fondo{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 auto;
+    transform: translate(20%,0%);
+    
+}
+
+#container #main #img-fondo #fondo{
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    padding:2% 4%;
+    margin-top: 10%;
+    font-family:'Barlow' ;
+    border-radius: 5px;
+    background-color: #FF5E5E;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+footer{
+    position: relative;
+    top:169px;
+    text-align: center;
+    height: 50px;
+    padding-top: 2%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+
+.texto{
+width: 500px;
+height: 200px;
+padding-left: 22%;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+
+}
+
+.mayus{
+    text-transform: uppercase;
+    color: hsl(231, 7%, 65%);
+    font-weight: 400; 
+
+}
+
+.mayus2{
+    text-transform: uppercase;
+    color: hsl(231, 7%, 65%);
+    font-weight: 400; 
+    max-width: 300px;
+    margin-right: 0px;
+    margin-top: 12%;
+
+
+}
+
+h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 350%;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 4% 0% 4% 0%;
+
+}
+
+p{
+    font-family:'Barlow' ;
+    font-weight: 400;
+    margin:  2% 0% 2% 0%;
+    color:rgb(139, 139, 141);    
+}
+
+.attribution{
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+
+}
+
+b{
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+}
+
+@media only screen and (max-width: 786px){
+    html body{
+        max-width: 786px;
+        height: 900px;
+        margin: auto;
+        border: solid black;
+    }
+
+
+    #container #header #nav-bar{
+        box-sizing: border-box;
+        padding: 50px 40px 50px 10px;
+        width: 80%;
+        height: 5px;
+        display: block;    
+        transform: translate(0%, -80%);
+        z-index: 1;
+    }
+    #container #main{
+        /*display: grid;
+        grid-template-columns: 1fr ;*/
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;        
+        max-width: 750px;
+        min-width: 376px;
+        border: solid green;
+        
+    }
+
+    #container #main #img-fondo #fondo{
+        width: 100%;
+        height: 100%;
+        border: solid red;
+        position: relative;
+        top: 20%;
+    }
+    
+}
+
+    /*Menú desplegable*/
+    
+    @media only screen and (max-width: 786px){
+
+    .control-menu{
+        background-color: transparent;
+        background-position: center center;
+        display: block;
+        float: right;
+        
+        margin-right: 20px;
+        margin-top: 80px;
+    }
+    
+    .control-menu a{
+        display: inline-block;
+        height: 40px;
+        text-indent: -9999px;
+        width: 40px;
+        transform: translate(60%, -70%);
+    }
+    
+    .control-menu .close {
+        background-image: url("/images/icon-close.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: none;
+    }
+    
+    .control-menu .open {
+        background-image: url("/images/icon-hamburguer.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        /*display: block;*/
+        
+    }
+    
+    .nav-items {
+        padding: 5px;
+        width: 100%;
+        clear: both;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.4s ease-in-out 0s, background-color 0.9s ease 0s;
+    }
+    
+    #nav-bar:target .nav-items {
+        background: #fff none repeat scroll 0 0;
+        box-shadow:0 15px 20px rgba(0, 0, 0, 0.3);
+        height: 250px;
+        width: 300px;
+        transform: translate(-17%, -15%);
+        transition: height 0.4s ease-in-out 0s, background-color 0.9s ease 0s;
+    }
+    
+    .close { 
+        display:none;
+    }
+    
+    #nav-bar:target .open {
+        display: none;
+    }
+    
+    #nav-bar:target .close {
+        display: block;
+    }
+    
+
+    /*Estilos menú*/
+    
+    .nav-items a {
+        text-decoration: none;
+        text-align: center;
+        color: #000;
+        display: block;
+        height: 15px;
+        line-height: 30px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 700;
+        padding: 10px;
+    }
+    
+    #nav-bar .nav-items #login{
+        border-top: 1px solid hsl(231, 7%, 65%);
+        color: hsl(231, 7%, 65%);
+        transform: translate(0px, 0);
+        text-align: center;
+    }
+
+    #fondo{
+        position: relative;
+        top: -200px;
+    }
+}
+
+
+   
+
+
+ 
+    
+    
+    
+    
